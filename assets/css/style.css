@@ -18,6 +18,7 @@ body {
     /* scroll-behavior: smooth; */
     /* overflow: hidden; */
 }
+
 body::-webkit-scrollbar {
     display: none;
 }
@@ -90,7 +91,7 @@ header button span {
 /* hero section starts */
 
 .hero {
-    min-height: 10vh;
+    min-height: 100vh;
     padding: 100px 0;
     padding-bottom: 200px;
     overflow-x: clip;
@@ -190,13 +191,13 @@ header button span {
     width: 164px;
 }
 
-.heroImageSlide1 {
+/* .heroImageSlide1 {
     transform: translateY(0%);
 }
 
 .heroImageSlide2 {
     transform: translateY(-59%);
-}
+} */
 
 .heroImageSlide img {
     width: 100%;
@@ -237,6 +238,10 @@ header button span {
     font-size: 145px;
     letter-spacing: 2px;
     white-space: nowrap;
+}
+
+.introInfo h2 br {
+    display: none;
 }
 
 .introInfo p {
@@ -660,5 +665,764 @@ header button span {
 
 
 
+
+
 /* responsive starts */
+@media (max-width: 1350px) {
+    header img {
+        width: 250px;
+    }
+
+    header button {
+        width: 140px;
+        height: 48px;
+    }
+
+
+
+
+
+    .heroLeft h1 {
+        font-size: 85px;
+    }
+
+    .heroLeft button {
+        width: 210px;
+        height: 58px;
+        font-size: 16px;
+    }
+
+
+
+
+
+
+    .introInfo h2 {
+        font-size: 120px;
+    }
+
+    .introInfo p {
+        font-size: 16px;
+    }
+
+    .introInfo1 p {
+        padding-left: 50px;
+    }
+
+
+
+
+
+
+    .portfolioHeading h2 {
+        font-size: 135px;
+    }
+
+
+    .portfolioSingleSkill {
+        font-size: 16px;
+        padding: 8px 22px;
+    }
+
+    .singlePortfolioOverlay h2 {
+        font-size: 135px;
+    }
+
+    .portfolioFooter h3 {
+        font-size: 55px;
+    }
+
+
+
+
+
+
+    .singleSkill h3 {
+        font-size: 65px;
+    }
+
+    .singleSkill ul li {
+        font-size: 45px;
+    }
+
+    .singleSkill ul li img {
+        width: 75px;
+    }
+
+    .singleSkill ul li span {
+        font-size: 16px;
+    }
+
+    .skillHeading {
+        font-size: 135px;
+    }
+
+
+
+
+
+    .contactHeading h3 {
+        font-size: 40px;
+    }
+
+    .contactHeading h2 {
+        font-size: 135px;
+    }
+
+
+    .contactInpWrap input {
+        height: 55px;
+        font-size: 18px;
+    }
+
+    .contactFormWrap form textarea {
+        font-size: 18px;
+    }
+
+
+    .contactFormWrap form button {
+        font-size: 18px;
+    }
+
+    .contactSocialHeading {
+        font-size: 18px;
+    }
+
+
+    .contactSocial ul li a img {
+        width: 25px;
+    }
+
+    .contactSocial ul li a p {
+        font-size: 22px;
+    }
+}
+
+
+
+
+@media (max-width: 1100px) {
+    .heroLeft h1 {
+        font-size: 75px;
+    }
+
+
+    .heroImageSlide {
+        width: 135px;
+    }
+
+    .heroImageSlide img {
+        height: 150px;
+        border-radius: 20px;
+    }
+
+
+
+
+
+    .introInfo {
+        margin-bottom: 65px;
+    }
+
+    .introInfo h2 {
+        font-size: 90px;
+    }
+
+    .checkWorkBtn {
+        font-size: 18px;
+    }
+
+
+
+
+
+    .singleSkill ul {
+        width: 550px;
+    }
+
+    .singleSkill ul li {
+        font-size: 38px;
+    }
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 990px) {
+    .container {
+        padding: 0 30px;
+    }
+
+
+
+    .portfolioHeading h2,
+    .singlePortfolioOverlay h2 {
+        font-size: 110px;
+    }
+
+    .portfolioSingleSkill {
+        font-size: 14px;
+        padding: 7px 20px;
+    }
+
+    .portfolioFooter h3 {
+        font-size: 50px;
+    }
+
+
+
+
+
+
+
+    .skillWrapper {
+        gap: 55px;
+    }
+
+    .singleSkill h3 {
+        font-size: 55px;
+    }
+
+    .singleSkill ul {
+        width: 450px;
+    }
+
+    .singleSkill ul li {
+        font-size: 32px;
+    }
+
+    .singleSkill ul li img {
+        width: 55px;
+    }
+
+    .singleSkill ul li span {
+        font-size: 14px;
+    }
+
+
+    .skillHeading {
+        font-size: 110px;
+    }
+
+
+
+
+
+
+    .contactHeading h3 {
+        font-size: 35px;
+        margin-bottom: 0;
+    }
+
+    .contactHeading h2 {
+        font-size: 110px;
+    }
+
+    .contactFormWrap {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .contactBottom {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .contactSocial ul li a {
+        width: fit-content;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 850px) {
+    header img {
+        width: 200px;
+    }
+
+    header button {
+        width: 130px;
+        height: 43px;
+        font-size: 14px;
+    }
+
+
+
+
+
+    .heroLeft h1 {
+        font-size: 60px;
+    }
+
+    .heroLeft button {
+        width: 165px;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .heroImageSlideWrap {
+        gap: 10px;
+    }
+
+    .heroImageSlide {
+        width: 110px;
+    }
+
+    .heroImageSlide img {
+        height: 135px;
+        border-radius: 16px;
+    }
+
+
+
+
+
+
+
+    .introInfo h2 {
+        font-size: 80px;
+    }
+
+    .introInfo p {
+        font-size: 14px;
+    }
+
+    .introInfo1 p {
+        padding-left: 30px;
+    }
+
+    .introInfo2 p {
+        padding-left: 15px;
+    }
+
+
+
+
+
+
+    .portfolioHeading {
+        margin-right: 200px;
+    }
+
+
+
+
+
+
+
+
+    .singleSkill h3 {
+        font-size: 50px;
+        margin-bottom: 35px;
+    }
+
+    .singleSkill ul {
+        width: 360px;
+    }
+
+    .singleSkill ul li img {
+        width: 45px;
+    }
+
+    .singleSkill ul li {
+        font-size: 25px;
+    }
+
+    .singleSkill ul li span {
+        font-size: 12px;
+        padding-left: 30px;
+    }
+
+    .singleSkill ul li span::before {
+        width: 22px;
+    }
+
+
+
+
+
+
+
+    .contactInpWrap input {
+        font-size: 16px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 750px) {
+    .hero {
+        padding: 70px 0;
+    }
+
+    .hero .container {
+        flex-direction: column;
+    }
+
+    .heroLeft {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .heroRight {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .heroImageSlideWrap {
+        flex-direction: column;
+    }
+
+    .heroImageSlide {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .heroImageSlide img {
+        width: calc(25% - 8px);
+        margin-bottom: 0;
+    }
+
+
+
+
+
+    .introInfo1 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .introInfo2 {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+
+    .introInfo1 p {
+        padding-left: 0;
+    }
+
+    .introInfo2 p {
+        padding: 0;
+        text-align: end;
+    }
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 650px) {
+
+    .portfolioHeading h2,
+    .singlePortfolioOverlay h2 {
+        font-size: 95px;
+    }
+
+    .portfolioFooter h3 {
+        font-size: 45px;
+    }
+
+
+
+
+    .introInfo {
+        margin-bottom: 45px;
+    }
+
+    .introInfo h2 {
+        font-size: 60px;
+    }
+
+
+
+
+
+
+
+    .portfolioHeading {
+        margin-right: 180px;
+    }
+
+
+
+
+
+    .skill .container {
+        flex-direction: column-reverse;
+    }
+
+    .singleSkill h3 {
+        font-size: 45px;
+        margin-bottom: 25px;
+    }
+
+    .skillHeading {
+        font-size: 95px;
+        position: unset;
+        text-align: start;
+        margin-bottom: 35px;
+    }
+
+    .singleSkill ul {
+        width: 100%;
+    }
+
+
+
+
+
+
+
+    .contactHeading h3 {
+        font-size: 30px;
+    }
+
+    .contactHeading h2 {
+        font-size: 95px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 500px) {
+    header {
+        padding: 25px 0;
+    }
+
+
+
+
+
+    .hero {
+        padding: 45px 0;
+    }
+
+
+
+
+    .introInfo2 h2 {
+        text-align: end;
+    }
+
+    .introInfo h2 br {
+        display: inline;
+    }
+
+
+
+
+
+
+
+
+
+    .portfolio {
+        height: auto;
+    }
+
+    .portfolio .container {
+        height: auto;
+        padding: 0 0;
+    }
+
+    .portfolioHeading {
+        margin-right: 0;
+        margin-bottom: 30px;
+        padding: 0 30px;
+    }
+
+    .portfolioContent {
+        width: 100%;
+        display: block;
+    }
+
+    .portfolioWrapper {
+        display: block;
+    }
+
+    .singlePortfolio {
+        width: 100%;
+        height: auto;
+    }
+
+    .singlePortfolio img {
+        width: 100%;
+        height: auto;
+    }
+
+    .singlePortfolioOverlay {
+        padding: 30px;
+        align-items: flex-start;
+    }
+
+    .singlePortfolioOverlay h2 {
+        font-size: 60px;
+    }
+
+    .portfolioSkillWrapper {
+        flex-wrap: wrap;
+    }
+
+    .portfolioFooter {
+        width: 100%;
+        padding: 0;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+    .skill {
+        padding: 50px 0;
+    }
+
+    .skill .container {
+        padding-bottom: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 450px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    header img {
+        width: 165px;
+    }
+
+    header button {
+        width: 110px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+
+
+
+
+
+
+    .heroLeft h1 {
+        font-size: 50px;
+    }
+
+    .heroLeft button {
+        width: 145px;
+        height: 45px;
+        font-size: 12px;
+    }
+
+
+
+
+
+
+    .portfolioHeading h2, .skillHeading {
+        font-size: 60px;
+    }
+    .singlePortfolio img {
+        height: 250px;
+        object-fit: cover;
+    }
+
+
+
+    
+    .singleSkill h3 {
+        font-size: 35px;
+    }
+    .singleSkill ul {
+        padding: 30px 15px;
+    }
+    .singleSkill ul li {
+        font-size: 20px;
+    }
+    .singleSkill ul li img {
+        width: 40px;
+        margin-right: 10px;
+    }
+
+
+
+
+
+
+    .contactHeading h2 {
+        font-size: 60px;
+    }
+
+    .contactInpWrap {
+        margin-bottom: 10px;
+    }
+    .contactInpWrap input {
+        width: calc(50% - 5px);
+        padding: 0 8px;
+    }
+    .contactFormWrap form button {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 400px) {
+    .heroImageSlide img {
+        height: 100px;
+    }
+    
+}
+
 /* responsive ends */

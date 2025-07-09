@@ -5,13 +5,26 @@ const splitText = new SplitType(heroHeading, {
     tagName: "span"
 });
 
+
+
+const isSmallScreen = window.innerWidth < 750;
+const dynamicSlideY = window.innerWidth < 850 ? "-21%" : window.innerWidth < 1100 ? "-35%" : "-59%";
+const dynamicSlideX = "-25%";
+
 gsap.set(splitText.chars, { opacity: 0.2 });
-gsap.set(".heroImageSlide1", { y: "0%" });
-gsap.set(".heroImageSlide2", { y: "-59%" });
+
+
+if (isSmallScreen) {
+    gsap.set(".heroImageSlide1", { x: "25%" });
+    gsap.set(".heroImageSlide2", { x: dynamicSlideX });
+} else {
+    gsap.set(".heroImageSlide1", { y: "0%" });
+    gsap.set(".heroImageSlide2", { y: dynamicSlideY });
+}
 
 const totalTextDuration = splitText.chars.length * 0.5;
 
-gsap.timeline({
+const timeline = gsap.timeline({
     scrollTrigger: {
         trigger: "#hero",
         start: "top top",
@@ -25,17 +38,33 @@ gsap.timeline({
         opacity: 1,
         stagger: 0.5,
         ease: "none",
-    }, 0)
-    .to(".heroImageSlide1", {
-        y: "-59%",
-        ease: "none",
-        duration: totalTextDuration,
-    }, 0)
-    .to(".heroImageSlide2", {
-        y: "0%",
-        ease: "none",
-        duration: totalTextDuration,
     }, 0);
+
+if (isSmallScreen) {
+    timeline
+        .to(".heroImageSlide1", {
+            x: dynamicSlideX,
+            ease: "none",
+            duration: totalTextDuration,
+        }, 0)
+        .to(".heroImageSlide2", {
+            x: "25%",
+            ease: "none",
+            duration: totalTextDuration,
+        }, 0);
+} else {
+    timeline
+        .to(".heroImageSlide1", {
+            y: dynamicSlideY,
+            ease: "none",
+            duration: totalTextDuration,
+        }, 0)
+        .to(".heroImageSlide2", {
+            y: "0%",
+            ease: "none",
+            duration: totalTextDuration,
+        }, 0);
+}
 
 
 gsap.set(".introInfo1", { x: "-100%", opacity: 0 });
@@ -71,6 +100,8 @@ gsap.timeline({
 
 
 
+
+const animateOffScreen = window.innerWidth < 500
 const portfolioContainer = document.querySelector("#portfolio .container .portfolioContent");
 const portfolioHeading = document.querySelector("#portfolio .portfolioHeading");
 
@@ -101,8 +132,10 @@ if (portfolioContainer && portfolioHeading) {
         });
     }
 
-    setupPortfolioScroll();
-    window.addEventListener("resize", setupPortfolioScroll);
+    if (!animateOffScreen) {
+        setupPortfolioScroll();
+        window.addEventListener("resize", setupPortfolioScroll);
+    }
 }
 
 
