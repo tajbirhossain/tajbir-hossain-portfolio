@@ -7,9 +7,14 @@ const splitText = new SplitType(heroHeading, {
 
 
 
-const isSmallScreen = window.innerWidth < 750;
-const dynamicSlideY = window.innerWidth < 850 ? "-21%" : window.innerWidth < 1100 ? "-35%" : "-59%";
+let isSmallScreen = window.innerWidth < 750;
+let dynamicSlideY = window.innerWidth < 850 ? "-21%" : window.innerWidth < 1100 ? "-35%" : "-59%";
 const dynamicSlideX = "-25%";
+
+// window.addEventListener("resize", () => {
+//     isSmallScreen = window.innerWidth < 750;
+//     dynamicSlideY = window.innerWidth < 850 ? "-21%" : window.innerWidth < 1100 ? "-35%" : "-59%";
+// })
 
 gsap.set(splitText.chars, { opacity: 0.2 });
 
